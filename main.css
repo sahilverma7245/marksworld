@@ -1,0 +1,682 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+::selection{
+    background-color: black;
+    color: white;
+}
+body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+}
+.page1{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+.navsection{
+    position: fixed;
+    border-bottom: 1px solid #ff9500;
+    height: 7vh;
+    width: 100%;
+    z-index: 110;
+    background-color: rgb(255, 166, 0);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 13px;
+    padding-bottom: 4px;
+    position: relative;
+}
+.navbar li:hover{
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 20%;
+    transition: 0.3s;
+    scale: 1;
+    border: 1px solid black;
+}
+.nav .logo{
+    margin-left: 20px;
+}
+.nav .navbar{
+    display: flex;
+    gap: 6vw;
+    margin-right: 10%;
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+    position: relative;
+}
+.nav .navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 520;
+    color: black;
+}
+.checkbox{
+    display: none;
+}
+.icon{
+    display: none;
+}
+.midcontainer{
+    display: flex;
+}
+.right{
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+}
+.midcontainer .right img{
+    float: right;
+    margin-left: 100px;
+    height: 50vw;
+}
+.left{
+    height: 50vh;
+    width: 100%;
+    font-family: 'Futura';
+    text-transform: capitalize;
+   padding-top: 10vw;
+   padding-left: 11vw;
+    align-items:flex-start ;
+}
+.left .static{
+    font-size: 30px;
+    display: inline-flex;
+   
+}
+.left .dynamic{
+ margin-top: -2.5%;
+margin-left: 15px;
+height: 90px;
+line-height: 90px;
+overflow: hidden;
+
+}
+.dynamic li{
+    list-style: none;
+    font-size: 60px;
+   background-color: none;
+   color: orange;
+   top: 0%;
+   position: relative;
+   top: 0;
+   animation: slide 8s steps(4) infinite;
+   
+}
+.btnsec{
+    margin-top: 4vw;
+    
+}
+
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+.dynamic li span{
+    position: relative;
+}
+.dynamic li span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid orange;
+    background-color: white ;
+    padding: 10px;
+    left: 0%;
+    animation: typing 2s steps(10) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+.markin{
+   margin-top: 3vw;
+   border: 2px solid orange;
+   padding: 10px;
+   width: 450px;
+}
+.page2{
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    /* background-color: rgb(247, 161, 1); */
+    
+}
+.btnsec .resume , .github{
+    padding: 3px;
+    background-color:  rgba(255, 166, 0, 0.225);
+    border: 1px solid rgb(0, 0, 0);
+}
+.resume:hover{
+    background-color: #ff9500;
+}
+.github:hover{
+    background-color: orange;
+}
+.leftp h1{
+    font-size: 13vw;
+    text-transform: capitalize;
+    font-family: 'Futura';
+    margin-top: 70px;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    border-bottom: 1px solid black;
+}
+.leftp .aboutp{
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.page3{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    /* overflow: hidden; */
+    
+}
+.videocontainer, video{
+    filter: opacity(0.8);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 99;
+    position: relative;
+}
+.aboutbtn{
+    margin-top: 10px;
+    margin-left: 50px;
+    position: relative;
+}
+.inaboutbtn{
+    padding: 10px 40px;
+    background-color: orange;
+    text-transform: capitalize;
+    border: 1px solid black;
+   
+}
+.inaboutbtn a{
+    text-decoration: none;
+    color: white;
+}
+
+.follow{
+    position: absolute;
+    z-index: 110;
+   
+}
+.page4{
+    height: 150vh;
+    width: 100vw;
+    position: relative;
+}
+.page4 .graphic{
+    margin-top: 200px;
+}
+.ingraphic{
+    font-family: 'Futura';
+    font-size: 12vw;
+}
+.page4 .graphic h1{
+    text-align: center;
+    font-size: 15vw;
+    text-transform: uppercase;
+    font-family: 'Futura';
+    margin-top: 70px;
+    line-height: 160px;
+    padding-bottom: 2vw;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    border-bottom: 0.5px solid black;
+    border-top:  0.5px solid black;
+}
+.cardcontainter{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -10%;
+}
+#card{
+    /* margin-top: 20px; */
+    height: 500px;
+    width: 350px;
+    /* background-color: green; */
+    position: relative;
+}
+#card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(1px);
+    scale: 0.9;
+    transition: all ease 0.5s;
+}
+#card img:hover{
+    scale: 1;
+    
+}
+.gdbtn{
+    top: 65%;
+    left: 36%;
+    position: absolute;
+    align-items: center;
+    z-index: 125;
+}
+#card .gdbtn{
+    padding: 10px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: rgba(255, 166, 0, 0.637);
+    border: 1px solid orange;
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+    font-weight: 900;
+    /* font-family: 'impact'; */
+}
+.page5{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: white;
+}
+
+.page5 .textmove{
+    height: 30vh;
+    width: 100%;
+    background-color: #ff9500;
+    text-transform: uppercase;
+    position: relative;
+   
+}
+.page5 .textmove h1{
+    font-family: 'Futura';
+    font-size: 25vh;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    color: transparent;
+}
+.page5 .textmove h1:hover{
+    color: white;
+    transition: all ease 0.6s;
+}
+.page5 .taekwondosection {
+    margin-top: 5vh;
+    position: relative;
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.page5 .taekwondosection{
+    border-bottom: 1px solid black;
+}
+.page5 .taekwondosection img{
+    height: 64vh;
+    margin-top: -100px;
+    
+}
+.page6{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: green; */
+}
+.page6 .taekwondoplayer h1{
+   font-size: 11vw;
+   text-transform: uppercase;
+   text-align: center;
+   font-family: 'futura';
+   line-height: 150px;
+   color: transparent;
+   -webkit-text-stroke: 1.5px black;
+}
+.tkdpic{
+    height: 50vh;
+    width: 30vw;
+    margin-left: 35vw;
+    margin-top: 5vh;
+    background-image: url(./image/taekwondo\ pic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.page7{
+    height: 100vh;
+    width: 100vw;
+}
+.page7 .memories{
+    margin-top: 9px;
+    height: 40vh;
+    width: 100%;
+    background-color: #ff9500;
+}
+.page7 .memories h1{
+    font-size: 14vw;
+    font-family: 'Futura';
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
+.page7 .mimg{
+    margin-top: 6vh;
+    height: 50vh;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mimg .cardm{
+    height: 50vh;
+    width: 30vw;
+    
+}
+.mimg .cardm img{
+    height: 100%;
+    width: 100%;
+    filter: blur(1px);
+    object-fit: cover;
+    z-index: 99;
+    scale: 0.90;
+    transition: all ease 1s;
+}
+.mimg .cardm img:hover{
+scale: 1;
+}
+
+.cardm .mbtn{
+    position: absolute;
+    z-index: 100;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    background-color: rgba(255, 166, 0, 0.5);
+    border: 1px solid white;
+    font-family: '  ';
+    border-radius: 20px;
+    color: white;
+    margin-top: 15%;
+    margin-left: 155px;
+}
+
+
+
+/* about section css */
+
+
+.apage1{
+    height: 100vh;
+    width: 100vw;
+   
+}
+.aleft img{
+    height: 510px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: 0px;
+}
+.abouttxt{
+    height: 30vh;
+    width: 100%;
+    background-color: orange;
+}
+.abouttxt h1{
+    font-family: 'Futura';
+    font-size: 25vh;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    color: transparent;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+}
+.abouttxt h1:hover{
+    color: white;
+}
+.apage2{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./image/page\ 2\ white\ background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.apage2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.apage2 .lefta2{
+    height: 50vw;
+    width: 45vw;
+    /* background-color: red; */
+    position: relative;
+   
+    /* background-color: rgb(0, 0, 0); */
+}
+.apage2 .righta2{
+    height: 50vw;
+    width: 50vw;
+    background-color: green;
+    /* background-color: rgb(255, 170, 0); */
+}
+.lefta2 img{
+    transform: rotate(270deg);
+    border-bottom: 10px solid black;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media query  */
+
+    @media (max-width: 900px) {
+        .midcontainer{
+            display: block;
+            align-items: center;
+           
+        }
+        .apage2{
+            display: block;
+        }
+        
+    
+    }
+    @media (max-width: 600px){
+        .navbar li{
+            display: none;
+        }
+        .icon{
+            display: block;
+            font-size: 25px;
+        }
+        .markin{
+            width: 300px;
+        }
+        .midcontainer{
+            position: absolute;
+            margin-top: 30px;
+        }
+        .midcontainer .right #rightimg{
+           height: 450px;
+          margin-top: -40%;
+          margin-right: -230px;
+        }
+       
+        .leftp{
+            margin-top: -20px;
+        }
+        .page2{
+            height: 50vh;
+        }
+        .leftp .aboutp{
+            font-size: 15px;
+            margin-top: 50px;
+            /* margin-left: -2%; */
+            margin-right: 5px;
+        }
+        .aboutbtn{
+            margin-left: 5px;
+        }
+        /* .videocontainer{
+            margin-top: -10%;
+        } */
+        .page4 .graphic {
+            margin-top: -20%;
+        }
+        .page4 .graphic h1{
+            line-height: 80px;
+        }
+        .page5 .textmove{
+            margin-top: 300px;
+            height: 20vh;
+        }
+        .page5 .textmove h1{
+            font-size: 15vh;
+        }
+        .cardcontainter{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 100px;
+        
+        }
+        .card1,.card2, .card3{
+            margin-top: 10px;
+        }
+        .page6 .taekwondoplayer h1{
+            font-size: 15vw;
+            line-height: 65px;
+        }
+        .tkdpic{
+            height: 50vh;
+            width: 60vw;
+            margin-left: 20%;
+            margin-top: 10px;
+        }
+        .page7 .memories{
+            height: 20vw;
+            width: 100%;
+            margin-top: -200px;
+        }
+        .mimg{
+            margin-top: 6vh;
+            height: 50vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            
+            
+        }
+        .mimg .cardm{
+            height: 350px;
+            width: 350px;
+            margin-top: 20px;
+        }
+        .mimg .mbtn{
+            margin-top: 190px;
+            margin-left: 130px;
+        }
+        .page7 .mimg{
+            margin-top: 280px;
+        }
+
+        /* html page media query */
+       .aleft img{
+        height: 280px;
+       }
+       .abouttxt{
+        height: 15vh;
+        width: 100%;
+        background-color: orange;
+        }
+        .abouttxt h1{
+           font-size: 20vw;
+           color: whitesmoke;
+        }
+        .apage2{
+            margin-top: -50%;
+        }
+        
+        
+        
+        .lefta2 img{
+            height: 80vw;
+        }
+        
+   
+   
+
+
+        
+       
+
+        
+        
+        
+    }
+    @media (max-width: 480px){
+     .left .static h1{
+        font-size: 40px;
+     }
+     .left .static .dynamic li{
+    font-size: 45px;
+     }
+     .static h1{
+        margin-top: 15px;
+     }
+     .page4 .graphic h1{
+        line-height: 50px;
+    }
+    .page6 .taekwondoplayer h1{
+        font-size: 13vw;
+        line-height: 55px;
+    }
+
+    }
+
+    @media (max-width: 350px){
+        .page6 .taekwondoplayer h1{
+            font-family: 12vw;
+            line-height: 45px;
+        } 
+        .apage2{
+            margin-top: -95%;
+        }
+    }
+
+
+@media (max-width:600px) {
+    .navbar{
+        display: none;
+    }
+}
